@@ -1,0 +1,61 @@
+//nav
+.container-phone {
+  width: 100%;
+  padding: 0;
+}
+
+.navbar-logo {
+  @include phone {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+  }
+}
+
+
+.navbar-brand {
+  width: 121px;
+  height: 55px;
+  background-image: url(../images/logo.svg);
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+}
+
+.navbar-icon {
+  font-size: 36px;
+  line-height: 0.75;
+  padding: $spacer*4 0;
+  vertical-align: middle;
+}
+
+.navbar-menu {
+  margin-right: -$spacer*5;
+  flex-grow: 0;
+}
+
+.nav-link {
+  font-size: $font-size-base;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $secondary;
+  padding: $spacer*5 !important;
+  transition: .5s;
+
+  &:hover {
+    transform: translateY(-5px);
+    font-weight: 700;
+    color: $primary-darker;
+  }
+
+  @include phone {
+    font-size: $font-size-base*1.25;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 0 13px 0;
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #DEDEDE;
+  }
+}

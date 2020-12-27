@@ -1,0 +1,28 @@
+//service
+.homestay-banner {
+  height: 315px;
+  background: url(../images/homestay-1.png) center/cover;
+  overflow: hidden;
+  text-indent: 101%;
+  white-space: nowrap;
+
+  @include phone {
+    width: 100%;
+    height: 352px;
+  }
+}
+
+.service-input {
+  width: auto;
+  font-family: 'Helvetica Neue',
+    sans-serif;
+  font-size: $font-size-base;
+  line-height: 1.4;
+  font-weight: 400;
+  padding: $spacer*2 $spacer*4;
+  color: $gray-700
+}
+
+.homestay-img {
+  height: 128px;
+}

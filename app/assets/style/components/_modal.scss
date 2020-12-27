@@ -1,0 +1,6 @@
+//modal
+.modal-lg {
+  @include pc {
+    max-width: 920px;
+  }
+}
