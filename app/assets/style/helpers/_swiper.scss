@@ -4,9 +4,10 @@
   height: 100%;
 }
 
-.swiper-wrap {
-  margin-left: -15px;
-  margin-right: -15px;
+.swiper-wrapper {
+  @include phone {
+    height: 421.2px*3;
+  }
 }
 
 .swiper-slide {

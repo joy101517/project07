@@ -3,10 +3,12 @@
 @import "bootstrap";
 
 @import "./helpers/grid";
+@import "./helpers/utilities";
 @import "./helpers/text";
 @import "./helpers/swiper";
 @import "./helpers/border";
-@import "./helpers/base";
+
+@import "./base/base";
 
 
 @import "./components/btn";
@@ -17,8 +19,8 @@
 @import "./layout/nav";
 @import "./layout/footer";
 
-@import "./pages/index.scss";
-@import "./pages/login.scss";
-@import "./pages/member.scss";
-@import "./pages/service.scss";
-@import "./pages/detail.scss";
+@import "./pages/index";
+@import "./pages/login";
+@import "./pages/member";
+@import "./pages/service";
+@import "./pages/detail";
