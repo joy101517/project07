@@ -39,8 +39,8 @@ $(function () {
   }); // Initialize Swiper
 
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 10,
+    slidesPerView: 3,
+    direction: 'vertical',
     loop: true,
     autoplay: {
       delay: 2500,
@@ -53,7 +53,8 @@ $(function () {
     breakpoints: {
       767: {
         slidesPerView: 3,
-        spaceBetween: 30
+        spaceBetween: 30,
+        direction: 'horizontal'
       }
     }
   }); // jQuery Datepicker

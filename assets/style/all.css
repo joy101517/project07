@@ -1,59 +1,3 @@
-.gray-100 {
-  color: #FAFAFA;
-}
-
-.gray-150 {
-  color: #F8F9FA;
-}
-
-.gray-200 {
-  color: #DADFE3;
-}
-
-.gray-250 {
-  color: #DEE2E6;
-}
-
-.gray-300 {
-  color: #CED4DA;
-}
-
-.gray-400 {
-  color: #95989A;
-}
-
-.gray-500 {
-  color: #888888;
-}
-
-.gray-550 {
-  color: #818A91;
-}
-
-.gray-600 {
-  color: #6C757D;
-}
-
-.gray-700 {
-  color: #495057;
-}
-
-.gray-800 {
-  color: #373A3C;
-}
-
-.gray-900 {
-  color: #212529;
-}
-
-.black-a {
-  color: #00000029;
-}
-
-.black-a-light {
-  color: #00000020;
-}
-
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
@@ -20584,6 +20528,77 @@ a.text-point-lighter:hover, a.text-point-lighter:focus {
   }
 }
 
+.gray-100 {
+  color: #FAFAFA;
+}
+
+.gray-150 {
+  color: #F8F9FA;
+}
+
+.gray-200 {
+  color: #DADFE3;
+}
+
+.gray-250 {
+  color: #DEE2E6;
+}
+
+.gray-300 {
+  color: #CED4DA;
+}
+
+.gray-400 {
+  color: #95989A;
+}
+
+.gray-500 {
+  color: #888888;
+}
+
+.gray-550 {
+  color: #818A91;
+}
+
+.gray-600 {
+  color: #6C757D;
+}
+
+.gray-700 {
+  color: #495057;
+}
+
+.gray-800 {
+  color: #373A3C;
+}
+
+.gray-900 {
+  color: #212529;
+}
+
+.black-a {
+  color: #00000029;
+}
+
+.black-a-light {
+  color: #00000020;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 991px) {
+  .position-fixed {
+    position: static !important;
+  }
+}
+
 .material-icons {
   font-size: 44px;
   -webkit-transition: .5s;
@@ -20816,9 +20831,10 @@ a.text-point-lighter:hover, a.text-point-lighter:focus {
   height: 100%;
 }
 
-.swiper-wrap {
-  margin-left: -15px;
-  margin-right: -15px;
+@media (max-width: 767px) {
+  .swiper-wrapper {
+    height: 1263.6px;
+  }
 }
 
 .swiper-slide {
@@ -20859,27 +20875,12 @@ a.text-secondary:hover, a.text-secondary:focus {
   color: #F0AD25 !important;
 }
 
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
 .navbar-menu {
   margin-right: 0 !important;
 }
 
 .page-link {
   border: 1px solid #DEE2E6;
-}
-
-@media (max-width: 991px) {
-  .position-fixed {
-    position: static !important;
-  }
 }
 
 button:focus {
@@ -20962,7 +20963,6 @@ button:focus {
 
 .card-body {
   background-color: #FAFAFA;
-  height: 121px;
 }
 
 .card-title {
@@ -21014,11 +21014,6 @@ button:focus {
   .modal-lg {
     max-width: 920px;
   }
-}
-
-.container-phone {
-  width: 100%;
-  padding: 0;
 }
 
 @media (max-width: 767px) {
@@ -21126,12 +21121,12 @@ button:focus {
   }
 }
 
-.banner-text {
+.banner-section {
   height: 736px;
 }
 
 @media (max-width: 991px) {
-  .banner-text {
+  .banner-section {
     height: auto;
   }
 }
@@ -21324,12 +21319,16 @@ button:focus {
 
 .homestay-img {
   height: 128px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .detail-img {
   border-radius: 4px;
   width: 100%;
   height: 440px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 991px) {
