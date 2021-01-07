@@ -40,10 +40,11 @@ $(function () {
 
   var swiper = new Swiper('.swiper-container', {
     slidesPerView: 3,
+    spaceBetween: 10,
     direction: 'vertical',
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 3000,
       disableOnInteraction: false
     },
     // Navigation arrows
